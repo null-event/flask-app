@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for post in posts %}
+		<p>{{ post.employee }}</p>
+		<p>{{ post.id }}</p>
+		<p>{{ post.birthday }}</p>
+		<p>{{ post.address }}</p>
+	{% endfor %}
+{% endblock %}

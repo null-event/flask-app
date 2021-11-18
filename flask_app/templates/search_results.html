@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="jumbotron">
+	  <h1 class="display-4">Result found!</h1>
+	  <p class="lead">View the employee record below:</p>
+	  <hr class="my-4">
+	  <p class="lead">
+	    <a class="btn btn-primary btn-lg" href="/post/{{ results }}" role="button">Go to employee record</a>
+	  </p>
+	</div>
+{% endblock %}

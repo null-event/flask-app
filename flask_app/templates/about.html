@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="jumbotron">
+	  <h1 class="display-4">Welcome to BloreBank</h1>
+	  <p class="lead">If this is your first visit, please <a href="{{url_for('register') }}">register</a> for permission to view the employee database. Otherwise, please <a href="{{url_for('login') }}">login</a> to continue.</p>
+	  <hr class="my-4">
+	  <p>If you would like to update any employee records, the administrator will need to do so on your behalf.</p>
+	  <p class="lead">
+	    <a class="btn btn-primary btn-lg" href="/admin" role="button">Administrator? Click here <b>after</b> logging in!</a>
+	  </p>
+	</div>
+{% endblock %}
